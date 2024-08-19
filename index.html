@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP Numero 1</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th,td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="encabezado">
+<h1><b>Encabezado Principal</b></h1>
+<ul>
+    <li><a href="#estructure">Ir a Estructura</a></li>
+    <li><a href="#properties">Ir a Propiedades</a></li>
+    <li><a href="#section">Ir a Seccion</a></li>
+    <li><a href="#links">Ir a enlaces</a></li>
+    <li><a href="#media">Ir a Multimedia</a></li>
+    <li><a href="#tables">Ir a Tablas</a></li>
+    <li><a href="#form">Ir a Formulario</a></li>
+
+    
+</ul>
+</div>
+
+    <div class="punto1" id="estructure">
+        <h1><b>1. Estructura Basica del Documento HTML</b></h1>
+        <p>Este documento HTML, tiene una estructura basica que incluye la declaracion DOCTYPE,etiquetas de metadatos y un titulo</p>
+    </div>
+
+    <div class="punto2" id="properties">
+    <h2><b>2. Encabezados y Propiedades del Texto</b></h2>
+        <h3><strong>Hola, soy un h3</strong></h3>
+        <h4><em>Hola, soy un h4</em></h4>
+        <h5><sub>Hola, soy un h5</mark></h5>
+        <h6><span>Hola, soy un h6</span></h6>
+    </div>
+
+    <div class="punto3" id="section">
+        <h2><b>3. Divisiones y Agrupacion de Contenido</b></h2>
+        <div class="seccion1">
+            <h4><b>Seccion 1</b></h4>
+        <p>Contenido de la primera seccion agrupada en un div.</p>
+        </div>
+        <div class="seccion2">
+            <h4><b>Seccion 2</b></h4>
+        <p>Contenido de la segunda seccion agrupada en un div.</p>
+        </div>
+    </div>
+
+    <div class="punto4" id="links">
+    <h2><b>4. Enlaces y Listas</E></b></h2>
+        <p><span>Visita nuestro <a href="https://www.youtube.com/c/ColmenaTEC">sitio web</a> para mas informacion.</span></p>
+        <div>
+            <h4>Enlaces internos: </h4>
+            <ul>
+                <li><a href="#estructure">Ir a Estructura</a></li>
+                <li><a href="#media">Ir a Multimedia</a></li>
+                <li><a href="#form">Ir a Formulario</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Lista Desordenada: </h4>
+            <ul>
+                <li>Primer Item de una lista desordenada</li>
+                <li>Segundo Item de una lista desordenada</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Lista Ordenada: </h4>
+            <ol>
+                <li>Primer Item de una lista ordenada</li>
+                <li>Segundo Item de una lista ordenada</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="punto5" id="media">
+        <h2><b>5. Elementos Multimedia</b></h2>
+        <div>
+            <h5>Foto</h5>
+            <img src="https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-930x487.jpg"
+                 width="200px" heigth="200px" alt="Imagen de mario">
+        </div>
+        <div>
+            <h5>Video</h5>
+            <video src="https://video-previews.elements.envatousercontent.com/5b3b6876-9689-4cfe-9692-1cf061a156f6/watermarked_preview/watermarked_preview.mp4" controls width="400px" heigth="400px"></video>
+        </div>
+        <div>
+            <h5>Audio</h5>
+            <audio src="https://download.blender.org/peach/trailer/trailer_1080p.ogg" controls></audio>
+        </div>
+    </div>
+
+    <div class="punto6" id="tables">
+        <h2><b>6. Tablas</b></h2>
+        <div>
+            <table>
+                <thead>
+                <tr>
+                    <th><b>Columna 1</b></th>
+                    <th><b>Columna 2</b></th>
+                    <th><b>Columna 3</b></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Fila 1,Celda 1</td>
+                    <td>Fila 1,Celda 2</td>
+                    <td>Fila 1,Celda 3</td>
+                </tr>
+                <tr>
+                    <td>Fila 2,Celda 1</td>
+                    <td>Fila 2,Celda 2</td>
+                    <td>Fila 2,Celda 3</td>
+                </tr>
+                <tr>
+                    <td>Fila 3,Celda 1</td>
+                    <td>Fila 3,Celda 2</td>
+                    <td>Fila 3,Celda 3</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="punto7" id="form">
+        <h2>7. Formulario</h2>
+        <form action="">
+            <div>
+                <label>Nombre de usuario</label>
+                <input type="text" placeholder="Nombre de usuario">
+            </div>
+            <br>
+            <div>
+                <label>Email</label>
+                <input type="email" placeholder="Ingrese su email">
+            </div>
+            <br>
+            <div>
+                <label>Password</label>
+                <input type="password" placeholder="Ingrese su contraseña">
+            </div>
+            <br>
+            <div>
+                <label>Mensaje</label>
+                <textarea placeholder="Ingrese un mensaje"></textarea>
+            </div>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
